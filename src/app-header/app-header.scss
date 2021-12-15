@@ -1,0 +1,54 @@
+.AppHeader {
+    @media (max-width: 768px) {
+        &__hallow-wrapper {
+            flex-direction: column;
+        }
+    }
+
+    &__hallow-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+
+        .hallow {
+            color: #666666;
+            flex: 1 0;
+        }
+
+        .user-wrapper {
+            flex: 3 0;
+            .status {
+                max-width: 500px;
+                min-width: 215px;
+                height: max-content;
+                font-family: Arial;
+                font-size: 14px;
+                padding: 12px;
+                line-height: 22px;
+                border-radius: 5px;
+                color: #404040;
+                background-color: #EAEAEA;
+            }
+
+            .top-zone {
+                display: flex;
+                flex-flow: row nowrap;
+                .status-btn {
+                    font-size: 12px;
+                    margin-left: 125px;
+                    padding: 0;
+                    color: #0C77BB;
+                    border: none;
+                    border-bottom: 1px dashed #0C77BB;
+                    background-color: white;
+                }
+            }
+        }
+
+    }
+}

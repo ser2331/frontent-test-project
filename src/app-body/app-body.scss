@@ -1,0 +1,139 @@
+.AppBody {
+    &__form-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px 0;
+        padding: 0 10px;
+
+        .label {
+            flex: 1 0;
+            font-family: Arial;
+            font-size: 21px;
+            line-height: 19px;
+            margin-right: 20px;
+        }
+
+        .field-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 3 0;
+
+            @media (max-width: 768px) {
+                .field-container {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+
+            .field-container {
+                display: flex;
+
+                .notification {
+                    flex: 1 0;
+                    margin-left: 20px;
+                    font-family: Comfortaa;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #999999;
+                }
+
+                @media (max-width: 768px) {
+                    .notification {
+                        margin-top: 25px;
+                    }
+                }
+
+                .input {
+                    max-width: 450px;
+                    min-width: 215px;
+                    height: 16px;
+                    flex: 1 0;
+                    padding: 8px;
+                    border: 1px solid #999999;
+                }
+
+                @media (max-width: 768px) {
+                    .input {
+                        max-width: 100%;
+                    }
+                }
+
+                .select-city {
+                    height: auto;
+                }
+
+                .red {
+                    border: 1px solid red;
+                }
+            }
+
+            .checkbox-wrapper {
+                flex-flow: row nowrap;
+            }
+
+            .red-notification {
+                position: absolute;
+                margin-top: 38px;
+                font-size: 12px;
+                line-height: 20px;
+                color: red;
+            }
+            @media (max-width: 768px) {
+                .red-notification {
+                    margin-top: 30px;
+                }
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            .field-wrapper {
+                width: 100%;
+            }
+        }
+
+        .checkbox {
+            margin-right: 4px;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            flex: 3 0;
+            align-items: center;
+
+            .btn-submit {
+                padding: 12px;
+                border: none;
+                background: #71C838;
+                box-shadow: 0 1px 0 #539D22;
+                color: white;
+                margin-right: 12px;
+            }
+            .notification {
+                flex: 1 0;
+                font-family: Comfortaa;
+                font-size: 12px;
+                line-height: 20px;
+                color: #999999;
+            }
+        }
+
+    }
+
+    @media(max-width: 768px) {
+        &__form-wrapper {
+            flex-direction: column;
+            padding: 0 20px;
+
+
+            .label {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    &__line {
+        border: 1px solid #E5E4E4;
+    }
+}
